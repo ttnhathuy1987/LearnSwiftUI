@@ -15,6 +15,8 @@
 		B112AEAB26269E8C0042D072 /* HiddenSeparaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B112AEAA26269E8C0042D072 /* HiddenSeparaView.swift */; };
 		B17557EB266F1F25001150BA /* LocalPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17557EA266F1F25001150BA /* LocalPushNotification.swift */; };
 		B17557EE266F1F9E001150BA /* LocalNotificationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17557ED266F1F9E001150BA /* LocalNotificationDemoView.swift */; };
+		B17557F3266F6B4D001150BA /* Slidemenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17557F2266F6B4D001150BA /* Slidemenu.swift */; };
+		B17557F7266F6DB7001150BA /* MenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17557F6266F6DB7001150BA /* MenuContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B112AEAA26269E8C0042D072 /* HiddenSeparaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenSeparaView.swift; sourceTree = "<group>"; };
 		B17557EA266F1F25001150BA /* LocalPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPushNotification.swift; sourceTree = "<group>"; };
 		B17557ED266F1F9E001150BA /* LocalNotificationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationDemoView.swift; sourceTree = "<group>"; };
+		B17557F2266F6B4D001150BA /* Slidemenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slidemenu.swift; sourceTree = "<group>"; };
+		B17557F6266F6DB7001150BA /* MenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		B112AE8F2625732B0042D072 /* LearnSwiftUIAdvange */ = {
 			isa = PBXGroup;
 			children = (
+				B17557F1266F6B30001150BA /* SlideMenu */,
 				B112AE902625732B0042D072 /* LearnSwiftUIAdvangeApp.swift */,
 				B112AE922625732B0042D072 /* ContentView.swift */,
 				B112AE942625732E0042D072 /* Assets.xcassets */,
@@ -79,6 +84,15 @@
 				B112AE972625732E0042D072 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B17557F1266F6B30001150BA /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B17557F2266F6B4D001150BA /* Slidemenu.swift */,
+				B17557F6266F6DB7001150BA /* MenuContent.swift */,
+			);
+			path = SlideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17557F3266F6B4D001150BA /* Slidemenu.swift in Sources */,
 				B112AEAB26269E8C0042D072 /* HiddenSeparaView.swift in Sources */,
 				B112AE932625732B0042D072 /* ContentView.swift in Sources */,
 				B17557EB266F1F25001150BA /* LocalPushNotification.swift in Sources */,
+				B17557F7266F6DB7001150BA /* MenuContent.swift in Sources */,
 				B112AEA82626910C0042D072 /* SwiftUINextView.swift in Sources */,
 				B17557EE266F1F9E001150BA /* LocalNotificationDemoView.swift in Sources */,
 				B112AE912625732B0042D072 /* LearnSwiftUIAdvangeApp.swift in Sources */,

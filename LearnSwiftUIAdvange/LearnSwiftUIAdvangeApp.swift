@@ -12,9 +12,36 @@ import os
 struct LearnSwiftUIAdvangeApp: App {
     @StateObject var notificationCenter = NotificationCenter()
     @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
+    
+    @State var menuOpen: Bool = false
+    
+    func openMenu() {
+        self.menuOpen.toggle()
+    }
+    
+    struct MenuView: View {
+        @Binding var menuOpen: Bool
+        var body: some View {
+            VStack(alignment: .leading) {
+                HStack {
+                    Button("Menu") {
+                        self.menuOpen.toggle()
+                    }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
+                    Spacer()
+                }
+            }.frame(maxWidth: .infinity).background(Color.red)
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(notificationCenter)
+            VStack(spacing:0) {
+                MenuView(menuOpen: $menuOpen)
+                ZStack {
+                    ContentView().environmentObject(notificationCenter)
+                    Slidemenu(width: 270, isOpen: self.menuOpen,menuClose: self.openMenu)
+                }
+            }
         }
     }
 }
